@@ -15,8 +15,11 @@ public class VariableJavaActivity extends AppCompatActivity {
     int clickcount = 0;
     final long startTime = System.currentTimeMillis();
 
-    TextView txtActivityStartTime, txtCountBtnClicks;
+    TextView txtActivityStartTime, txtCountBtnClicks , txtElapsedTime;
     Button btnClickMe;
+    long elapsedSeconds;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,8 @@ public class VariableJavaActivity extends AppCompatActivity {
         txtActivityStartTime = findViewById(R.id.txtActivityStartTime);
         txtCountBtnClicks = findViewById(R.id.txtCountBtnClicks);
         btnClickMe = findViewById(R.id.btnClickMe);
+        txtElapsedTime = findViewById(R.id.txtElapsedTime);
+
 
 
         btnClickMe.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +38,8 @@ public class VariableJavaActivity extends AppCompatActivity {
             public void onClick(View v) {
                 clickcount += 1;
                 txtCountBtnClicks.setText("Button clicks: " + clickcount);
+                elapsedSeconds = ((System.currentTimeMillis() - startTime)/1000);
+                txtElapsedTime.setText(elapsedSeconds + " seconds elapsed");
             }
         });
 
