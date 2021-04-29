@@ -16,14 +16,24 @@ class MainActivity : AppCompatActivity() {
         //var btnHello : Button // val == final, const
         val btnJava = findViewById<Button>(R.id.btn_Java)
         val btnKotlin = findViewById<Button>(R.id.btn_kotlin)
+        val btnVarJava = findViewById<Button>(R.id.btnVarJava)
+        val btnVarKotlin = findViewById<Button>(R.id.btnVarKotlin)
         //btnHello = findViewById(R.id.btnHello)
         btnJava.setOnClickListener {
-            val javaIntent = Intent(this,BmiJavaActivity::class.java)
-            startActivity(javaIntent)
+            startActivity(Intent(this,BmiJavaActivity::class.java))
+
         }
         btnKotlin.setOnClickListener{
-            val kotlinIntent = Intent(this,BmiKotlinActivity::class.java)
-            startActivity(kotlinIntent)
+            startActivity(Intent(this,BmiKotlinActivity::class.java))
+
+        }
+        btnVarJava.setOnClickListener{
+            startActivity(Intent(this,VariableJavaActivity::class.java))
+
+        }
+        btnVarKotlin.setOnClickListener{
+            startActivity(Intent(this,VariableKotlinActivity::class.java))
+
         }
     }
 }

@@ -25,4 +25,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVarJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:text="VARIABLE = JAVA"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnVarKotlin"
+        app:layout_constraintEnd_toStartOf="@+id/btnVarKotlin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVarKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="193dp"
+        android:text="VARIABLE - KOTLIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnVarJava" />
 </androidx.constraintlayout.widget.ConstraintLayout>
