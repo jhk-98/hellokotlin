@@ -9,15 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hellokotlin">
-        <activity android:name=".VariableJavaActivity"
-            android:label="VariableJavaActivity"/>
-        <activity android:name=".VariableKotlinActivity"
-            android:label="VariableKotlinActivity"/>
-        <activity android:name=".BmiKotlinActivity"
-            android:label="BMIKotlinActivity"></activity>
-        <activity android:name=".BmiJavaActivity"
-            android:label="BMIJavaActivity"/>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".FlowControlKotlinActivity"
+            android:label="FlowControlKotlin"></activity>
+        <activity
+            android:name=".FlowControlJavaActivity"
+            android:label="FlowControlJava" />
+        <activity
+            android:name=".VariableJavaActivity"
+            android:label="VariableJavaActivity" />
+        <activity
+            android:name=".VariableKotlinActivity"
+            android:label="VariableKotlinActivity" />
+        <activity
+            android:name=".BmiKotlinActivity"
+            android:label="BMIKotlinActivity" />
+        <activity
+            android:name=".BmiJavaActivity"
+            android:label="BMIJavaActivity" />
+        <activity
+            android:name=".MainActivity"
             android:label="BMI calculation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         val btnKotlin = findViewById<Button>(R.id.btn_kotlin)
         val btnVarJava = findViewById<Button>(R.id.btnVarJava)
         val btnVarKotlin = findViewById<Button>(R.id.btnVarKotlin)
+        val btnFlowControlJava = findViewById<Button>(R.id.btnFlowControlJava)
+        val btnFlowControlKotlin = findViewById<Button>(R.id.btnFlowControlKotlin)
         //btnHello = findViewById(R.id.btnHello)
         btnJava.setOnClickListener {
             startActivity(Intent(this,BmiJavaActivity::class.java))
@@ -35,5 +37,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,VariableKotlinActivity::class.java))
 
         }
+        btnFlowControlJava.setOnClickListener {
+            startActivity(Intent(this,FlowControlJavaActivity::class.java))
+        }
+
+        btnFlowControlKotlin.setOnClickListener {
+            startActivity(Intent(this,FlowControlKotlinActivity::class.java))
+        }
+
     }
 }
