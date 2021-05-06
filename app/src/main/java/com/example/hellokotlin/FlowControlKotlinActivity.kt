@@ -28,7 +28,7 @@ class FlowControlKotlinActivity : AppCompatActivity() {
                     applicationContext,"" + number + "은(는)else", Toast.LENGTH_SHORT).show()
             }
             when (number) {
-                4,9 -> btnLD.text = "실행for"+number
+                4,9 -> btnLD.text = "실행for${number}"
                 else -> btnLD.text = "실행 for else"
             }
         }
